@@ -15,7 +15,7 @@ export class AiComponent implements OnInit {
   ngOnInit(): void {
     this.conversation.push({
       sender: 'IntelliWomb AI',
-      message: 'Welcome to IntelliWomb AI! I’m here to provide health information tailored for Pregnant Women. How can I assist you today?😊'
+      message: 'Welcome to IntelliWomb AI! I’m here to provide health information tailored for Pregnant Women. How can I assist you today? 😊'
     });
   }
 
