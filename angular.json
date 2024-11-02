@@ -116,6 +116,9 @@
               "devServerTarget": "ITS120L:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

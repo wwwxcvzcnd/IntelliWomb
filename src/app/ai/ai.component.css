@@ -1,0 +1,114 @@
+body {
+    background-color: #2F1847;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.chatbot-container {
+    background-color: rgba(138, 34, 111, 0.34);
+    border-radius: 20px;
+    max-width: 900px;
+    max-height: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 8.5%;
+    margin-bottom: 1%;
+}
+
+.chatbot-header h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.choices button {
+    background-color: rgba(138, 34, 111, 0.90);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.choices button:hover {
+    background-color: #D67AB1;
+}
+
+.chatbot-input {
+    background-color: rgba(214, 122, 177, 0.44);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container input {
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.input-container input::placeholder {
+    color: #D67AB1;
+}
+
+.send-button, .stop-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.send-button img, .stop-button img{
+    width: 24px;
+    height: 24px;
+}
+
+.conversation {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(138, 34, 111, 0.2); /* Background for the conversation area */
+    border-radius: 10px;
+    text-align: left;
+    color: white; /* Set the text color to white for all messages */
+}
+
+.user-message {
+    text-align: right;
+    color: white; /* Set user messages to white */
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #D67AB1;
+}
+
+.bot-message {
+    text-align: left;
+    color: white; /* Set bot messages to white */
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
+    border: 2px solid #D67AB1;
+}
+
+
+

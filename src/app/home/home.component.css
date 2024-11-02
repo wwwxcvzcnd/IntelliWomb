@@ -1,0 +1,94 @@
+/* Base styling for the home page */
+.home {
+  background-color: #2F1847; /* Dark purple background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 5%;
+}
+
+/* Welcome section styling */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more-btn {
+  background-color: #D67AB1; /* Pink button */
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  background-color: #bb6197; /* Slightly darker pink on hover */
+}
+
+/* Features section styling */
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: #fff;
+  color: #000000;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  width: 250px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.15), /* Inner shadow */
+              0 8px 15px rgba(0, 0, 0, 0.1); /* Outer shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px); /* Lifts card slightly on hover */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.15), 
+              0 12px 20px rgba(0, 0, 0, 0.2); /* Darker outer shadow on hover */
+}
+
+/* Top card centered */
+.feature-card-top {
+  width: 300px; /* Slightly wider for the top card */
+  margin-bottom: 1rem;
+}
+
+/* Bottom cards side by side in a triangular layout */
+.feature-card-bottom-wrapper {
+  display: flex;
+  gap: 10rem;
+}
+
+.feature-card-bottom {
+  width: 250px;
+}
+
+@media (max-width: 600px) {
+  /* Stack the bottom cards vertically on small screens */
+  .feature-card-bottom-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

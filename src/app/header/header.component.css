@@ -1,0 +1,51 @@
+/* Base styling */
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;    
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2F1847; /* Dark purple background */
+}
+
+/* Navigation styling */
+.nav {
+  display: flex;
+  position: relative;
+  left: 7.5%;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 115%;
+  font-weight: normal;
+}
+
+.nav-link:hover {
+  color: #D67AB1;
+}
+
+/* Active link styling */
+.active {
+  font-weight: bold;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  position: relative;
+  left: 140%;
+  width: 245px;
+  height: 95px;
+}

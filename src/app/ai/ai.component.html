@@ -1,0 +1,33 @@
+<div class="chatbot-container">
+    <div class="chatbot-header">
+        <h2>How can I assist you today?</h2>
+        <div class="choices">
+            <button (click)="sendMessage('Health Tips')">Health Tips</button>
+            <button (click)="sendMessage('Nutrition Advice')">Nutrition Advice</button>
+            <button (click)="sendMessage('Appointments and Tracking')">Appointments and Tracking</button>
+        </div>
+    </div>
+    <div class="conversation">
+      <div *ngFor="let msg of conversation" [ngClass]="{'user-message': msg.sender === 'User', 'bot-message': msg.sender === 'IntelliWomb AI'}">
+          <strong>{{msg.sender}}: </strong> <span [innerHTML]="msg.message"></span>
+      </div>
+    </div>
+    
+    <div class="chatbot-input">
+        <div class="input-container">
+            <input 
+                type="text" 
+                [(ngModel)]="userInput" 
+                placeholder="Ask IntelliWomb AI" 
+                (keydown.enter)="sendMessage(userInput)" 
+            />
+            <button class="send-button" (click)="sendMessage(userInput)">
+                <img src="assets/icons/enter.svg" alt="Send">
+            </button>
+            <button class="stop-button">
+                <img src="assets/icons/stop.svg" alt="Stop">
+            </button>
+        </div>
+    </div>
+  </div>
+  

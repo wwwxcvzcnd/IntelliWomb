@@ -1,0 +1,112 @@
+:root {
+    --dark-purple: #2F1847;
+    --pink: #D67AB1;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--dark-purple);
+    color: white;
+    margin-top: 5%; /* Add margin-top */
+  }
+  
+  .content {
+    max-width: 40%;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .contact-info {
+    background-color: rgba(255, 255, 255, .80);
+    color: black;
+    padding: 1.5rem;
+    width: 200px; /* Fixed width */
+    height: auto; /* Fixed height to make it a square */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-left: 25%;
+  }
+  
+  .contact-info p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .form-container {
+    margin-top: 0.1%;
+    background-color: rgba(255, 255, 255, .80);
+    padding: 2rem;
+    border-radius: 15px; /* Same rounded corners as contact-info */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Same shadow for depth */
+    width: 30%;
+  }
+  
+  .form-container h2 {
+    color: #D67AB1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container label, .aaa {
+    display: block;
+    color: #000000;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    margin-left: 5%;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px #000000;
+    border-radius: 5px;
+    margin-left: 5%;
+  }
+  .submit-button {
+    background-color: #D67AB1;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    width: 80%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto; /* Push the button to the center */
+    margin-right: auto; /* Push the button to the center */
+    display: block; /* Ensure the button takes the full width available */
+  }
+  
+  .submit-button:hover {
+    background-color: #bf6091;
+  }
+  
